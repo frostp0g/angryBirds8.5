@@ -22,6 +22,8 @@ class SlingShot{
     }
 
     display(){
+        console.log("test");
+        
         image(this.sling1,200,20);
         image(this.sling2,170,20);
         if(this.sling.bodyA){
