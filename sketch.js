@@ -92,7 +92,8 @@ function draw(){
     bird4.display();
 
     platform.display();;
-    slingshot.display();    
+    slingshot.display();
+    console.log("test");
 }
 
 function mouseDragged(){
@@ -100,8 +101,6 @@ function mouseDragged(){
         Matter.Body.setPosition(birds[birds.length - 1].body, {x: mouseX , y: mouseY});
         Matter.Body.applyForce(birds[birds.length - 1], birds[birds.length - 1].body.position, {x: 5, y: -5});
         return(false);
-
-        console.log("hi");
 
         birdSelect.play();
     }
