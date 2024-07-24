@@ -101,6 +101,8 @@ function mouseDragged(){
         Matter.Body.applyForce(birds[birds.length - 1], birds[birds.length - 1].body.position, {x: 5, y: -5});
         return(false);
 
+        console.log("hi");
+
         birdSelect.play();
     }
 }
